@@ -1,0 +1,16 @@
+{
+  "name": "admitflow",
+  "version": "1.0.0",
+  "description": "AdmitFlow - Admission and Enrollment Management System",
+  "scripts": {
+    "start": "concurrently \"cd nodeapp && npm run dev\" \"cd reactapp && npm start\"",
+    "install-deps": "concurrently \"cd nodeapp && npm install\" \"cd reactapp && npm install\"",
+    "test": "concurrently \"cd nodeapp && npm test\" \"cd reactapp && npm test\""
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "concurrently": "^8.0.1",
+    "jest": "^30.2.0"
+  }
+}

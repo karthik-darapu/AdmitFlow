@@ -1,0 +1,77 @@
+/* Global theme overrides */
+[data-theme='light'] {
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+/* Base text colors */
+body {
+  color: var(--base-content);
+  background-color: var(--base-100);
+}
+
+/* Ensure all text elements inherit the theme color */
+*, ::before, ::after {
+  color: inherit;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+p, span, div, li, dt, dd,
+label, input, textarea, select,
+button, a {
+  color: var(--base-content);
+}
+
+/* Form elements */
+input, textarea, select {
+  color: var(--base-content);
+  background-color: var(--base-100);
+}
+
+/* Cards */
+.card, .card-title, .card-body {
+  color: var(--base-content);
+}
+
+/* Navigation */
+.navbar, .navbar-start, .navbar-center, .navbar-end,
+.nav-link, .menu-item {
+  color: var(--base-content);
+}
+
+/* Tables */
+table, th, td {
+  color: var(--base-content);
+}
+
+/* Lists */
+ul, ol, li {
+  color: var(--base-content);
+}
+
+/* Buttons */
+.btn {
+  color: var(--base-content);
+}
+.btn-primary {
+  color: var(--primary-content);
+}
+
+/* Links */
+a:not(.btn) {
+  color: var(--base-content);
+}
+
+/* Overrides for specific components */
+.text-base-content {
+  color: var(--base-content) !important;
+}
+
+/* Force text color inheritance */
+[class*="text-"] {
+  color: inherit;
+}
